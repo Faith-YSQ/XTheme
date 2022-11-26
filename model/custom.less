@@ -1,0 +1,20 @@
+// out: false
+
+// 此文件书写自定义属性，以便版本迭代不影响文档排版
+
+// 段落和引言自定义属性，首行缩进
+.p[custom-y~=p-indent] div.p,
+.bq[custom-y~=p-indent] div.p {
+    text-indent: 2em;
+}
+
+// 公式块字体大小自定义
+div[data-type="NodeMathBlock"][custom-y="small"] {
+    font-size: 80%;
+}
+
+// 表格表头自定义属性
+.protyle-wysiwyg [data-node-id][custom-y~=th-center] table th {
+    text-align: center !important;
+}
+
