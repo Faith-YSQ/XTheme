@@ -1,3 +1,7 @@
+.protyle-wysiwyg [data-node-id] [spellcheck=false] {
+  word-wrap: break-word;
+  word-break: break-all;
+}
 .p[custom-y~=p-indent] div.p,
 .bq[custom-y~=p-indent] div.p {
   text-indent: 2em;
