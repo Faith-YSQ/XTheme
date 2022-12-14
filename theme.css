@@ -13,6 +13,15 @@
 div[data-bazaar="themes"].b3-card {
   width: 262px;
 }
+div[data-bazaar="templates"].b3-card {
+  width: 262px;
+}
+div[data-bazaar="icons"].b3-card {
+  width: 262px;
+}
+div[data-bazaar="widgets"].b3-card {
+  width: 262px;
+}
 .p[custom-y~=p-indent] div.p,
 .bq[custom-y~=p-indent] div.p {
   text-indent: 2em;
@@ -487,15 +496,6 @@ span.katex {
 }
 button[data-value*="((newFile"] {
   padding: 9px 8px;
-}
-div[data-bazaar="templates"].b3-card {
-  width: 266px;
-}
-div[data-bazaar="icons"].b3-card {
-  width: 266px;
-}
-div[data-bazaar="widgets"].b3-card {
-  width: 266px;
 }
 .config-bazaar__readme .item__preview--fullscreen {
   z-index: 4;
