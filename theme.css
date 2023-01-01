@@ -22,6 +22,10 @@ div[data-bazaar="icons"].b3-card {
 div[data-bazaar="widgets"].b3-card {
   width: 262px;
 }
+div[data-type="NodeCodeBlock"][style="color: var(--b3-card-error-color); background-color: var(--b3-card-error-background);"] {
+  border-top: 3px solid #e13238;
+  border-left: none !important;
+}
 .p[custom-y~=p-indent] div.p,
 .bq[custom-y~=p-indent] div.p {
   text-indent: 2em;

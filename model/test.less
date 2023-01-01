@@ -33,3 +33,9 @@ div[data-bazaar="icons"].b3-card {
 div[data-bazaar="widgets"].b3-card {
     width: 262px;
 }
+
+// 当代码块被设置为错误样式时，上边框变为红色。
+div[data-type="NodeCodeBlock"][style="color: var(--b3-card-error-color); background-color: var(--b3-card-error-background);"]{
+    border-top:3px solid #e13238;
+    border-left: none !important;
+}
