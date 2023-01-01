@@ -590,14 +590,16 @@ span[data-type="mark"] {
 }
 
 // 大纲里的代码样式
-span.b3-list-item__text code {
+li[data-treetype="outline"] span[data-type="code"]{
     font-family: @font-code;
 }
 
 // 标题中的代码
 div[data-type="NodeHeading"] span[data-type="code"] {
-    background-color: rgba(27, 31, 35, .05);
-    color: #202124;
+    // background-color: rgba(27, 31, 35, .05);
+    // color: #202124;
+    background-color: transparent;
+    color: inherit;
 }
 
 // 对于13中样式设置在段落上的微调
