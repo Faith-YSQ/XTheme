@@ -37,7 +37,7 @@ div[data-type="NodeMathBlock"][custom-y="small"] {
   text-align: center !important;
 }
 :root {
-  --b3-font-family: "霞鹜文楷";
+  --b3-font-family: "方正GDC体 简";
   --b3-font-family-code: "JetBrains Mono";
   --b3-font-family-math: "Cambria Math", "KaTeX_Math", "华文楷体";
   --b3-toolbar-background: #f7f8fa;
