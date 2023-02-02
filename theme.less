@@ -7,7 +7,7 @@
 // 定义变量位置
 // 字体
 // @font-mian: "霞鹜文楷";
-@font-mian:"方正GDC体 简";
+@font-mian: "方正GDC体 简";
 @font-code: "JetBrains Mono";
 @font-math: "Cambria Math", "KaTeX_Math", "华文楷体";
 
@@ -45,7 +45,8 @@
     // 顶部工具栏背景颜色
     --b3-toolbar-background: #f7f8fa;
     --b3-toolbar-blur-background: #f7f8fa;
-    --b3-toolbar-color: #202124;
+    --b3-toolbar-color: #0d0e11;
+    --b3-toolbar-hover: #e9eaea;
 
     // 四种外观样式颜色
     // 信息样式
@@ -183,6 +184,9 @@ ul.layout-tab-bar:not(ul.layout-tab-bar--readonly) {
 // 微调顶部工具栏项
 .toolbar__item {
     margin-left: 1px;
+    span.toolbar__text{
+        color: #000 !important;
+    }
 }
 
 .layout-tab-bar .item--focus:after {
@@ -591,7 +595,7 @@ span[data-type="mark"] {
 }
 
 // 大纲里的代码样式
-li[data-treetype="outline"] span[data-type="code"]{
+li[data-treetype="outline"] span[data-type="code"] {
     font-family: @font-code;
 }
 

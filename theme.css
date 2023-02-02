@@ -42,7 +42,8 @@ div[data-type="NodeMathBlock"][custom-y="small"] {
   --b3-font-family-math: "Cambria Math", "KaTeX_Math", "华文楷体";
   --b3-toolbar-background: #f7f8fa;
   --b3-toolbar-blur-background: #f7f8fa;
-  --b3-toolbar-color: #202124;
+  --b3-toolbar-color: #0d0e11;
+  --b3-toolbar-hover: #e9eaea;
   --b3-card-info-background: #eef9fd;
   --b3-card-info-color: #193c47;
   --b3-card-error-background: #ffebec;
@@ -140,6 +141,9 @@ ul.layout-tab-bar:not(ul.layout-tab-bar--readonly) li.item span.item__close svg 
 }
 .toolbar__item {
   margin-left: 1px;
+}
+.toolbar__item span.toolbar__text {
+  color: #000 !important;
 }
 .layout-tab-bar .item--focus:after {
   background-color: var(--b3-theme-primary) !important;
