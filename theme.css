@@ -176,7 +176,7 @@ div.b3-menu__submenu span.b3-color__square {
   height: 67px;
   border-radius: 2px;
 }
-div.protyle-font button.b3-color__square::after {
+div.protyle-font button[data-type="backgroundColor"].b3-color__square::after {
   content: 'A';
 }
 div.protyle-font button[data-type="backgroundColor"] {
