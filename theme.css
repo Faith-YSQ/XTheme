@@ -275,7 +275,7 @@ div.hint--menu div.b3-color__square {
   border: 0.1em solid #d3d3d3 !important;
   border-collapse: collapse;
   color: inherit;
-  background-color: white;
+  background-color: white !important;
 }
 .b3-typography blockquote,
 .b3-typography .bq,
