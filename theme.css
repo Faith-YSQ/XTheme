@@ -26,6 +26,9 @@ div[data-type="NodeCodeBlock"][style="color: var(--b3-card-error-color); backgro
   border-top: 3px solid #e13238;
   border-left: none !important;
 }
+button#refresh {
+  padding-right: 4px;
+}
 .p[custom-y~=p-indent] div.p,
 .bq[custom-y~=p-indent] div.p {
   text-indent: 2em;
