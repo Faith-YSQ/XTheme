@@ -18,3 +18,8 @@ div[data-type="NodeMathBlock"][custom-y="small"] {
     text-align: center !important;
 }
 
+// 自定义属性，为存在颜色设置的段落添加边框
+div[data-type="NodeParagraph"][style*="background-color: var("][custom-y~=border]{
+    border: 2px dashed #bfbfbf;
+    // margin: 3px 3px;
+}

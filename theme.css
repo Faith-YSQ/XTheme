@@ -58,6 +58,9 @@ div[data-type="NodeMathBlock"][custom-y="small"] {
 .protyle-wysiwyg [data-node-id][custom-y~=th-center] table th {
   text-align: center !important;
 }
+div[data-type="NodeParagraph"][style*="background-color: var("][custom-y~=border] {
+  border: 2px dashed #bfbfbf;
+}
 :root {
   --b3-font-family: "方正GDC体 简";
   --b3-font-family-code: "JetBrainsMono NFM";
@@ -497,7 +500,7 @@ div[style*="background-color: var(--b3-font-background"] {
 }
 .protyle-wysiwyg [data-node-id].sb[data-sb-layout=col] > div,
 .protyle-wysiwyg [data-node-id].sb[data-sb-layout=col] .sb {
-  border: 2px dashed #d9d9d9;
+  border: 2px dashed #bfbfbf;
   margin: 3px 3px;
 }
 .protyle-attr {
