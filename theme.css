@@ -144,10 +144,6 @@ div.protyle-content {
 div.protyle-content div.protyle-title__input {
   background-color: transparent;
 }
-div.b3-menu__submenu {
-  margin-left: 8px;
-  margin-right: 8px;
-}
 ul.layout-tab-bar:not(ul.layout-tab-bar--readonly) li.item {
   max-width: 400px;
 }
@@ -196,11 +192,11 @@ ul.layout-tab-bar:not(ul.layout-tab-bar--readonly) li.item span.item__close svg 
   background-color: #f0f8ff;
   transform: rotate(180deg);
 }
-div.b3-menu__submenu button.b3-menu__item {
+div.b3-menu__submenu button.b3-menu__item:has(.color__square) {
   padding: 3.5px !important;
   height: auto !important;
 }
-div.b3-menu__submenu button.b3-menu__item span.color__square {
+div.b3-menu__submenu button.b3-menu__item:has(.color__square) span.color__square {
   width: 67px;
   height: 67px;
   border-radius: 2px;
