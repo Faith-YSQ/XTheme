@@ -196,25 +196,25 @@ ul.layout-tab-bar:not(ul.layout-tab-bar--readonly) {
 }
 
 //设置面板关闭按钮设置
-.b3-dialog__container .b3-dialog__close {
-    color: gray;
-    font-size: 50%;
-    cursor: pointer;
-    background: white;
-    border-radius: 50px;
-    padding: 4px;
-    margin-left: 22px;
-    height: 13px;
-    width: 13px;
-    transition: all .1s;
-    transform: scale(1.1);
+svg.b3-dialog__close{
+    height: 25px;
+    width: 25px;
+    top:5px;
+    right: -36px;
+    use{
+        width: 25px;
+        // transition: all .1s;
+        // transform: scale(1.1);
+    }
+    
 }
 
-.b3-dialog__container .b3-dialog__close:hover {
-    color: #0c83f2;
-    background-color: #f0f8ff;
-    transform: rotate(180deg);
-}
+// svg.b3-dialog__close use:hover{
+//     color: #0c83f2;
+//     transform: rotate(180deg) !important;
+
+// }
+
 
 // 外观二级菜单
 div.b3-menu__submenu {
