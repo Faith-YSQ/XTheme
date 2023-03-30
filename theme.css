@@ -179,9 +179,16 @@ svg.b3-dialog__close {
   width: 25px;
   top: 5px;
   right: -36px;
+  color: #bfbfbf;
+  transition: all 0.1s;
 }
 svg.b3-dialog__close use {
   width: 25px;
+}
+svg.b3-dialog__close:hover {
+  color: #1890ff;
+  transform-origin: center;
+  transform: rotate(0.5turn);
 }
 div.b3-menu__submenu button.b3-menu__item:has(.color__square) {
   padding: 3.5px !important;
