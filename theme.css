@@ -62,7 +62,7 @@ div[data-type="NodeParagraph"][style*="background-color: var("][custom-y~=border
   border: 2px dashed #bfbfbf;
 }
 :root {
-  --b3-font-family: "方正GDC体 简";
+  --b3-font-family: "JetBrainsMono NFM";
   --b3-font-family-code: "JetBrainsMono NFM";
   --b3-font-family-math: "Cambria Math", "KaTeX_Math", "华文楷体";
   --b3-toolbar-background: #f7f8fa;
