@@ -271,9 +271,9 @@ div.protyle-hint button {
   width: 45% !important;
   border-radius: 2px !important;
 }
-div.hint--menu div.b3-color__square {
-  border: none !important;
-  padding: 10px !important;
+div.hint--menu div.color__square {
+  padding: 16px !important;
+  border-left: 5px solid #8c8c8c;
   border-radius: 0.4rem;
 }
 .protyle-wysiwyg table,
