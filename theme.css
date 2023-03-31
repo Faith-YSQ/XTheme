@@ -186,9 +186,13 @@ svg.b3-dialog__close use {
   width: 25px;
 }
 svg.b3-dialog__close:hover {
-  color: #1890ff;
+  color: #69c0ff;
   transform-origin: center;
   transform: rotate(0.5turn);
+}
+button.b3-button--cancel[aria-label="已读"] {
+  background-color: #3575f0;
+  color: #f1f1f1;
 }
 div.b3-menu__submenu button.b3-menu__item:has(.color__square) {
   padding: 3.5px !important;
