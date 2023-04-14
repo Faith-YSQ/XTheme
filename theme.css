@@ -186,7 +186,6 @@ svg.b3-dialog__close use {
   width: 25px;
 }
 svg.b3-dialog__close:hover {
-  color: #0c83f2;
   transform-origin: center;
   transform: rotate(0.5turn);
 }
