@@ -701,3 +701,9 @@ button[data-value*="((newFile"] {
   line-height: 20px;
   background-color: rgba(243, 243, 243);
 }
+div.config__panel > ul {
+  width: 250px !important;
+}
+div.config__panel > ul > li {
+  padding: 10px;
+}
