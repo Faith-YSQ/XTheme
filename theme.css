@@ -707,3 +707,6 @@ div.config__panel > ul {
 div.config__panel > ul > li {
   padding: 15px;
 }
+div.protyle-content--transition .protyle-wysiwyg[contenteditable="false"] {
+  cursor: auto;
+}
