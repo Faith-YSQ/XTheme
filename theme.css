@@ -177,8 +177,8 @@ ul.layout-tab-bar:not(ul.layout-tab-bar--readonly) li.item span.item__close svg 
 svg.b3-dialog__close {
   height: 25px;
   width: 25px;
-  top: 5px;
-  right: -36px;
+  top: -4px;
+  right: -42px;
   color: #bfbfbf;
   transition: all 0.1s;
 }
@@ -709,4 +709,7 @@ div.config__panel > ul > li {
 }
 div.protyle-content--transition .protyle-wysiwyg[contenteditable="false"] {
   cursor: auto;
+}
+span[data-type="block-ref"] {
+  cursor: pointer;
 }
