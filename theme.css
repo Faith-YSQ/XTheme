@@ -705,7 +705,7 @@ div.config__panel > ul {
   width: 250px !important;
 }
 div.config__panel > ul > li {
-  padding: 12px;
+  padding: 10px;
 }
 div.protyle-content--transition .protyle-wysiwyg[contenteditable="false"] {
   cursor: auto;
