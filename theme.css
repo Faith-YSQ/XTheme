@@ -317,7 +317,7 @@ div.hint--menu div.color__square {
 .b3-typography .bq::before,
 .protyle-wysiwyg blockquote::before,
 .protyle-wysiwyg .bq::before {
-  content: url(icons/xingzuo.svg) !important;
+  content: url(./icons/xingzuo.svg) !important;
   position: absolute !important;
   top: -22px !important;
   left: -15px !important;
@@ -687,7 +687,7 @@ button[data-value*="((newFile"] {
   position: relative;
 }
 .protyle-wysiwyg [data-node-id].render-node[data-type=NodeBlockQueryEmbed]::before {
-  content: url(icons/link.svg);
+  content: url(./icons/link.svg);
   position: absolute;
   left: -15px;
   top: -17px;
@@ -712,4 +712,13 @@ div.protyle-content--transition .protyle-wysiwyg[contenteditable="false"] {
 }
 span[data-type="block-ref"] {
   cursor: pointer;
+}
+.b3-typography img,
+.protyle-wysiwyg img {
+  border: 1px solid rgba(5, 5, 5, 0.06);
+  margin-bottom: 10px;
+}
+.b3-typography img:hover,
+.protyle-wysiwyg img:hover {
+  box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
 }
