@@ -62,8 +62,8 @@ div[data-type="NodeParagraph"][style*="background-color: var("][custom-y~=border
   border: 2px dashed #bfbfbf;
 }
 :root {
-  --b3-font-family: "JetBrainsMono NFM";
-  --b3-font-family-code: "JetBrainsMono NFM";
+  --b3-font-family: "JetBrainsMono Nerd Font Mono";
+  --b3-font-family-code: "JetBrainsMono Nerd Font Mono";
   --b3-font-family-math: "Cambria Math", "KaTeX_Math", "华文楷体";
   --b3-toolbar-background: #f7f8fa;
   --b3-toolbar-blur-background: #f7f8fa;
@@ -317,7 +317,7 @@ div.hint--menu div.color__square {
 .b3-typography .bq::before,
 .protyle-wysiwyg blockquote::before,
 .protyle-wysiwyg .bq::before {
-  content: url(./icons/xingzuo.svg) !important;
+  content: url(icons/xingzuo.svg) !important;
   position: absolute !important;
   top: -22px !important;
   left: -15px !important;
@@ -334,7 +334,7 @@ div.hint--menu div.color__square {
   padding-bottom: 4px !important;
   padding-left: 16px;
   padding-right: 16px;
-  font-family: "JetBrainsMono NFM";
+  font-family: "JetBrainsMono Nerd Font Mono";
   background-size: 20px 20px;
   background-image: none !important;
   background: transparent;
@@ -366,7 +366,7 @@ div.hint--menu div.color__square {
   padding: 4px;
   background-color: #fafafa !important;
   margin-bottom: 0px;
-  font-family: "JetBrainsMono NFM";
+  font-family: "JetBrainsMono Nerd Font Mono";
 }
 .protyle-linenumber__rows span::before {
   color: rgba(128, 128, 128, 0.5);
@@ -378,12 +378,12 @@ div.hint--menu div.color__square {
   right: 4em;
   border-radius: 4px;
   opacity: 1 !important;
-  font-family: "JetBrainsMono NFM";
+  font-family: "JetBrainsMono Nerd Font Mono";
 }
 .b3-typography .code-block .protyle-action .protyle-action__language::after,
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language::after {
   content: "›";
-  font-family: "JetBrainsMono NFM";
+  font-family: "JetBrainsMono Nerd Font Mono";
   color: #80808080;
   opacity: 1;
 }
@@ -414,7 +414,7 @@ code.hljs {
 .protyle-util div.b3-list-item,
 .b3-menu input,
 .protyle-util input {
-  font-family: "JetBrainsMono NFM";
+  font-family: "JetBrainsMono Nerd Font Mono";
 }
 div[style*="color: var(--b3-card-info-color)"] {
   padding: 16px !important;
@@ -472,7 +472,7 @@ span[data-type="mark"] {
   padding: 5px 10px;
   border: 0;
   font-size: 16px;
-  font-family: "JetBrainsMono NFM" !important;
+  font-family: "JetBrainsMono Nerd Font Mono" !important;
   transform: translateY(-2px);
   margin-left: 4px;
   margin-right: 4px;
@@ -488,7 +488,7 @@ span[data-type="mark"] {
   margin-right: 4px;
 }
 li[data-treetype="outline"] span[data-type="code"] {
-  font-family: "JetBrainsMono NFM";
+  font-family: "JetBrainsMono Nerd Font Mono";
 }
 div[data-type="NodeHeading"] span[data-type="code"] {
   background-color: transparent;
@@ -687,7 +687,7 @@ button[data-value*="((newFile"] {
   position: relative;
 }
 .protyle-wysiwyg [data-node-id].render-node[data-type=NodeBlockQueryEmbed]::before {
-  content: url(./icons/link.svg);
+  content: url(icons/link.svg);
   position: absolute;
   left: -15px;
   top: -17px;
