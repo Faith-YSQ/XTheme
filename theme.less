@@ -7,8 +7,8 @@
 // 字体
 // @font-mian: "霞鹜文楷";
 // @font-mian: "方正GDC体 简";
-@font-mian: "JetBrainsMono Nerd Font Mono";
-@font-code: "JetBrainsMono Nerd Font Mono";
+@font-mian: "JetBrainsMonoNL Nerd Font Propo";
+@font-code: "JetBrainsMonoNL Nerd Font Propo";
 @font-math: "Cambria Math", "KaTeX_Math", "华文楷体";
 
 // 主题依赖颜色
@@ -196,123 +196,40 @@ ul.layout-tab-bar:not(ul.layout-tab-bar--readonly) {
 }
 
 //设置面板关闭按钮设置
-svg.b3-dialog__close{
+svg.b3-dialog__close {
     height: 25px;
     width: 25px;
     top: -4px;
     right: -42px;
     color: #bfbfbf;
-    use{
+
+    use {
         width: 25px;
-        
+
     }
+
     transition: all .1s;
-    
+
 }
 
-svg.b3-dialog__close:hover{
+svg.b3-dialog__close:hover {
     // color: @--color-mian;
     transform-origin: center;
     transform: rotate(0.5turn);
 }
 
 // 已读按钮背景色
-button.b3-button--cancel[aria-label="已读"]{
+button.b3-button--cancel[aria-label="已读"] {
     background-color: #3575f0;
     color: #f1f1f1;
 }
 
-// 外观二级菜单
-div.b3-menu__submenu {
-    button.b3-menu__item:has(.color__square) {
-        padding: 3.5px !important;
-        height: auto !important;
-        
-        span.color__square {
-            width: 67px;
-            height: 67px;
-            border-radius: 2px;
-        }
-    }
-}
-
-
 // 行内字体面板
 div.protyle-font {
-
-    // font-size: 15px;
-    button[data-type="backgroundColor"].b3-color__square::after {
-        content: 'A';
-    }
-
-    button[data-type="backgroundColor"] {
+    button.color__square {
         width: 25px;
         height: 25px;
         border-radius: 2px;
-    }
-
-    button[data-type="color"] {
-        background-color: #fff !important;
-        width: 25px;
-        height: 25px;
-        border-radius: 2px;
-    }
-
-    button[data-type="color"][style="background-color:var(--b3-font-color1)"] {
-        color: var(--b3-font-color1);
-    }
-
-    button[data-type="color"][style="background-color:var(--b3-font-color2)"] {
-        color: var(--b3-font-color2);
-    }
-
-    button[data-type="color"][style="background-color:var(--b3-font-color3)"] {
-        color: var(--b3-font-color3);
-    }
-
-    button[data-type="color"][style="background-color:var(--b3-font-color4)"] {
-        color: var(--b3-font-color4);
-    }
-
-    button[data-type="color"][style="background-color:var(--b3-font-color5)"] {
-        color: var(--b3-font-color5);
-    }
-
-    button[data-type="color"][style="background-color:var(--b3-font-color6)"] {
-        color: var(--b3-font-color6);
-    }
-
-    button[data-type="color"][style="background-color:var(--b3-font-color7)"] {
-        color: var(--b3-font-color7);
-    }
-
-    button[data-type="color"][style="background-color:var(--b3-font-color8)"] {
-        color: var(--b3-font-color8);
-    }
-
-    button[data-type="color"][style="background-color:var(--b3-font-color9)"] {
-        color: var(--b3-font-color9);
-    }
-
-    button[data-type="color"][style="background-color:var(--b3-font-color10)"] {
-        color: var(--b3-font-color10);
-    }
-
-    button[data-type="color"][style="background-color:var(--b3-font-color11)"] {
-        color: var(--b3-font-color11);
-    }
-
-    button[data-type="color"][style="background-color:var(--b3-font-color12)"] {
-        color: var(--b3-font-color12);
-    }
-
-    button[data-type="color"][style="background-color:var(--b3-font-color13)"] {
-        color: var(--b3-font-color13);
-    }
-
-    button[data-type="backgroundColor"][style="background-color:var(--b3-font-background13)"]::after {
-        border-bottom: 1px solid;
-        margin-bottom: 1px;
     }
 }
 
@@ -876,15 +793,16 @@ button[data-value*="((newFile"] {
 }
 
 // 修改设置界面
-div.config__panel>ul{
+div.config__panel>ul {
     width: 250px !important;
-    >li{
+
+    >li {
         padding: 10px;
     }
 }
 
 // 修改只读模式下的鼠标状态
-div.protyle-content--transition .protyle-wysiwyg[contenteditable="false"]{
+div.protyle-content--transition .protyle-wysiwyg[contenteditable="false"] {
     cursor: auto;
 }
 
@@ -892,11 +810,13 @@ span[data-type="block-ref"] {
     cursor: pointer;
 }
 
-.b3-typography img, .protyle-wysiwyg img {
+.b3-typography img,
+.protyle-wysiwyg img {
     border: 1px solid rgba(5, 5, 5, 0.06);
     margin-bottom: 10px;
 }
 
-.b3-typography img:hover, .protyle-wysiwyg img:hover{
-    box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16),0 3px 6px 0 rgba(0, 0, 0, 0.12),0 5px 12px 4px rgba(0, 0, 0, 0.09);
+.b3-typography img:hover,
+.protyle-wysiwyg img:hover {
+    box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
 }
