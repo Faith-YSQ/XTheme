@@ -59,8 +59,8 @@ div[data-type="NodeParagraph"][style*="background-color: var("][custom-y~=border
   border: 2px dashed #bfbfbf;
 }
 :root {
-  --b3-font-family: "JetBrainsMonoNL Nerd Font Propo";
-  --b3-font-family-code: "JetBrainsMonoNL Nerd Font Propo";
+  --b3-font-family: "JetBrainsMono Nerd Font";
+  --b3-font-family-code: "JetBrainsMono Nerd Font";
   --b3-font-family-math: "Cambria Math", "KaTeX_Math", "华文楷体";
   --b3-toolbar-background: #f7f8fa;
   --b3-toolbar-blur-background: #f7f8fa;
@@ -270,7 +270,7 @@ div.hint--menu div.color__square {
   padding-bottom: 4px !important;
   padding-left: 16px;
   padding-right: 16px;
-  font-family: "JetBrainsMonoNL Nerd Font Propo";
+  font-family: "JetBrainsMono Nerd Font";
   background-size: 20px 20px;
   background-image: none !important;
   background: transparent;
@@ -302,7 +302,7 @@ div.hint--menu div.color__square {
   padding: 4px;
   background-color: #fafafa !important;
   margin-bottom: 0px;
-  font-family: "JetBrainsMonoNL Nerd Font Propo";
+  font-family: "JetBrainsMono Nerd Font";
 }
 .protyle-linenumber__rows span::before {
   color: rgba(128, 128, 128, 0.5);
@@ -314,12 +314,12 @@ div.hint--menu div.color__square {
   right: 4em;
   border-radius: 4px;
   opacity: 1 !important;
-  font-family: "JetBrainsMonoNL Nerd Font Propo";
+  font-family: "JetBrainsMono Nerd Font";
 }
 .b3-typography .code-block .protyle-action .protyle-action__language::after,
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language::after {
   content: "›";
-  font-family: "JetBrainsMonoNL Nerd Font Propo";
+  font-family: "JetBrainsMono Nerd Font";
   color: #80808080;
   opacity: 1;
 }
@@ -350,7 +350,7 @@ code.hljs {
 .protyle-util div.b3-list-item,
 .b3-menu input,
 .protyle-util input {
-  font-family: "JetBrainsMonoNL Nerd Font Propo";
+  font-family: "JetBrainsMono Nerd Font";
 }
 div[style*="color: var(--b3-card-info-color)"] {
   padding: 16px !important;
@@ -408,7 +408,7 @@ span[data-type="mark"] {
   padding: 5px 10px;
   border: 0;
   font-size: 16px;
-  font-family: "JetBrainsMonoNL Nerd Font Propo" !important;
+  font-family: "JetBrainsMono Nerd Font" !important;
   transform: translateY(-2px);
   margin-left: 4px;
   margin-right: 4px;
@@ -424,7 +424,7 @@ span[data-type="mark"] {
   margin-right: 4px;
 }
 li[data-treetype="outline"] span[data-type="code"] {
-  font-family: "JetBrainsMonoNL Nerd Font Propo";
+  font-family: "JetBrainsMono Nerd Font";
 }
 div[data-type="NodeHeading"] span[data-type="code"] {
   background-color: transparent;
