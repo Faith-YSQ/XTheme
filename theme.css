@@ -25,18 +25,6 @@ span[data-type="inbox"] {
   word-wrap: break-word;
   word-break: break-all;
 }
-div[data-bazaar="themes"].b3-card {
-  width: 262px;
-}
-div[data-bazaar="templates"].b3-card {
-  width: 262px;
-}
-div[data-bazaar="icons"].b3-card {
-  width: 262px;
-}
-div[data-bazaar="widgets"].b3-card {
-  width: 262px;
-}
 div[data-type="NodeCodeBlock"][style="color: var(--b3-card-error-color); background-color: var(--b3-card-error-background);"] {
   border-top: 3px solid #e13238;
   border-left: none !important;
@@ -44,6 +32,33 @@ div[data-type="NodeCodeBlock"][style="color: var(--b3-card-error-color); backgro
 }
 button#refresh {
   padding-right: 4px;
+}
+div.b3-menu__submenu > button.b3-menu__item:has(>img.b3-menu__icon) {
+  padding: 0 9px;
+  padding-left: 5px;
+}
+div.b3-menu__submenu > button.b3-menu__item:has(>img.b3-menu__icon) span.b3-menu__accelerator {
+  display: none;
+}
+div.b3-menu__submenu > button.b3-menu__item:has(>img.b3-menu__icon) img.b3-menu__icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+}
+div.b3-menu__submenu > button.b3-menu__item:has(>span.b3-menu__icon) {
+  padding: 0 9px;
+  padding-left: 5px;
+}
+div.b3-menu__submenu > button.b3-menu__item:has(>span.b3-menu__icon) span.b3-menu__accelerator {
+  display: none;
+}
+div.b3-menu__submenu > button.b3-menu__item:has(>span.b3-menu__icon) span.b3-menu__icon {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  line-height: 20px;
+  margin-left: 3px;
+  margin-right: 10px;
 }
 .p[custom-y~=p-indent] div.p,
 .bq[custom-y~=p-indent] div.p {

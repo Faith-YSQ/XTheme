@@ -4,8 +4,8 @@
 
 // 运行西文在单词处换行
 .protyle-wysiwyg [data-node-id] [spellcheck=false] {
-    word-wrap: break-word;
-    word-break: break-all;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 .fn__code,
@@ -13,35 +13,52 @@
 .b3-typography span[data-type~=code],
 .protyle-wysiwyg code:not(.hljs),
 .protyle-wysiwyg span[data-type~=code] {
-    word-wrap: break-word;
-    word-break: break-all;
-}
-
-// 调整市集主题的大小
-div[data-bazaar="themes"].b3-card {
-    width: 262px;
-}
-
-div[data-bazaar="templates"].b3-card {
-    width: 262px;
-}
-
-div[data-bazaar="icons"].b3-card {
-    width: 262px;
-}
-
-div[data-bazaar="widgets"].b3-card {
-    width: 262px;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 // 当代码块被设置为错误样式时，上边框变为红色。
 div[data-type="NodeCodeBlock"][style="color: var(--b3-card-error-color); background-color: var(--b3-card-error-background);"] {
-    border-top: 3px solid #e13238;
-    border-left: none !important;
-    padding-left: 0 !important;
+  border-top: 3px solid #e13238;
+  border-left: none !important;
+  padding-left: 0 !important;
 }
 
 // 微调设置账号处的刷新按钮
-button#refresh{
-    padding-right: 4px;
+button#refresh {
+  padding-right: 4px;
+}
+
+// 使用结构伪类选中日记二级菜单，调整图标
+div.b3-menu__submenu>button.b3-menu__item {
+  &:has(>img.b3-menu__icon) {
+    padding: 0 9px;
+    padding-left: 5px;
+    span.b3-menu__accelerator {
+      display: none;
+    }
+
+    img.b3-menu__icon {
+      width: 20px;
+      height: 20px;
+      margin-left: 8px;
+    }
+  }
+
+  &:has(>span.b3-menu__icon) {
+    padding: 0 9px;
+    padding-left: 5px;
+    span.b3-menu__accelerator {
+      display: none;
+    }
+
+    span.b3-menu__icon {
+      width: 20px;
+      height: 20px;
+      font-size: 20px;
+      line-height: 20px;
+      margin-left: 3px;
+      margin-right: 10px;
+    }
+  }
 }
