@@ -1,11 +1,11 @@
-# XTheme：一款思源笔记主题
+# XTheme: A Theme for SiYuan
 
-# 使用参数
+# Usage Guidelines
 
-- 对于电脑端用户，请先安装JetBrainsMono Nerd Font字体
-- 对于vivopad用户：建议使用免费字体春秋四季翻山越岭，配合电脑端的霞鹜文楷，两种字体还是挺相似的。
-- 对于iqoo手机，应该有iqootype字体，与方正GDC 简字体相似
+- For desktop users, please install the JetBrainsMono Nerd Font before applying the theme.
+- For Vivopad users: It is recommended to use the free font "Chunqiu Sijifanshanyueling" along with the "XiaWu WenKai" font on your computer. These two fonts are fairly similar.
+- For iQOO smartphones, there should be a font called "iQOotype" available, which is similar to the "FangZheng GDC Jian" font.
 
-# 预览图片
+# Preview Image
 
-![主题预览图片](./preview.png "主题预览图片")
+![Theme Preview Image](./preview.png "Theme Preview Image")

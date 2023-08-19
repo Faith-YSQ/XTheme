@@ -1,8 +1,27 @@
 {
   "name": "XTheme",
   "author": "Faith-YSQ",
-  "url": "",
+  "url": "https://github.com/Faith-YSQ/XTheme",
   "version": "1.0.0",
+  "minAppVersion": "2.10.0",
+  "displayName": {
+    "default": "XTheme",
+    "zh_CN": "XTheme"
+  },
+  "description": {
+    "default": "A simple theme with minor adjustments to the original theme.",
+    "zh_CN": "一个对原主题进行微调的简单的主题"
+  },
+  "readme": {
+    "default": "README.md",
+    "zh_CN": "README_zh_CN.md"
+  },
+  "funding": {
+    "openCollective": "",
+    "patreon": "",
+    "github": "",
+    "custom": []
+  },
   "modes": [
     "light"
   ]
