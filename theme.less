@@ -38,225 +38,231 @@
 // 主题代码书写位置
 // 基本设置更改
 :root {
-    // 字体设置
-    --b3-font-family: @font-mian;
-    --b3-font-family-code: @font-code;
-    --b3-font-family-math: @font-math;
+  // 字体设置
+  --b3-font-family: @font-mian;
+  --b3-font-family-code: @font-code;
+  --b3-font-family-math: @font-math;
 
-    // 顶部工具栏背景颜色
-    --b3-toolbar-background: #f7f8fa;
-    --b3-toolbar-blur-background: #f7f8fa;
-    --b3-toolbar-color: #0d0e11;
-    --b3-toolbar-hover: #e9eaea;
+  // 顶部工具栏背景颜色
+  --b3-toolbar-background: #f7f8fa;
+  --b3-toolbar-blur-background: #f7f8fa;
+  --b3-toolbar-color: #0d0e11;
+  --b3-toolbar-hover: #e9eaea;
 
-    // 四种外观样式颜色
-    // 信息样式
-    --b3-card-info-background: @--bgccolor-info;
-    --b3-card-info-color: @--color-info;
+  // 四种外观样式颜色
+  // 信息样式
+  --b3-card-info-background: @--bgccolor-info;
+  --b3-card-info-color: @--color-info;
 
-    // 错误样式
-    --b3-card-error-background: @--bgccolor-error;
-    --b3-card-error-color: @--color-error;
+  // 错误样式
+  --b3-card-error-background: @--bgccolor-error;
+  --b3-card-error-color: @--color-error;
 
-    // 成功样式
-    --b3-card-success-background: @--bgccolor-success;
-    --b3-card-success-color: @--color-success;
+  // 成功样式
+  --b3-card-success-background: @--bgccolor-success;
+  --b3-card-success-color: @--color-success;
 
-    // 警告样式
-    --b3-card-warning-background: @--bgccolor-warning;
-    --b3-card-warning-color: @--color-warning;
+  // 警告样式
+  --b3-card-warning-background: @--bgccolor-warning;
+  --b3-card-warning-color: @--color-warning;
 
-    // 13种文字颜色设置
-    --b3-font-color1: #FB4619;
-    --b3-font-color2: #FD7318;
-    --b3-font-color3: #FEA418;
-    --b3-font-color4: #FDCF18;
-    --b3-font-color5: #A0DA18;
-    --b3-font-color6: #4DC35E;
-    --b3-font-color7: #24D2C0;
-    --b3-font-color8: #15BAE5;
-    --b3-font-color9: #5955FB;
-    --b3-font-color10: #B32FFB;
-    --b3-font-color11: #F65199;
-    --b3-font-color12: #264FF7;
-    --b3-font-color13: #fcacb0;
+  // 13种文字颜色设置
+  --b3-font-color1: #FB4619;
+  --b3-font-color2: #FD7318;
+  --b3-font-color3: #FEA418;
+  --b3-font-color4: #FDCF18;
+  --b3-font-color5: #A0DA18;
+  --b3-font-color6: #4DC35E;
+  --b3-font-color7: #24D2C0;
+  --b3-font-color8: #15BAE5;
+  --b3-font-color9: #5955FB;
+  --b3-font-color10: #B32FFB;
+  --b3-font-color11: #F65199;
+  --b3-font-color12: #264FF7;
+  --b3-font-color13: #fcacb0;
 
-    --b3-font-background1: #ffccc7;
-    --b3-font-background2: #ffd8bf;
-    --b3-font-background3: #ffd591;
-    --b3-font-background4: #fff1b8;
-    --b3-font-background5: #ffffb8;
-    --b3-font-background6: #f4ffb8;
-    --b3-font-background7: #d9f7be;
-    --b3-font-background8: #b5f5ec;
-    --b3-font-background9: #bae7ff;
-    --b3-font-background10: #d6e4ff;
-    --b3-font-background11: #efdbff;
-    --b3-font-background12: #ffd6e7;
-    --b3-font-background13: transparent;
+  --b3-font-background1: #ffccc7;
+  --b3-font-background2: #ffd8bf;
+  --b3-font-background3: #ffd591;
+  --b3-font-background4: #fff1b8;
+  --b3-font-background5: #ffffb8;
+  --b3-font-background6: #f4ffb8;
+  --b3-font-background7: #d9f7be;
+  --b3-font-background8: #b5f5ec;
+  --b3-font-background9: #bae7ff;
+  --b3-font-background10: #d6e4ff;
+  --b3-font-background11: #efdbff;
+  --b3-font-background12: #ffd6e7;
+  --b3-font-background13: transparent;
 
+  --b3-border-radius-b: 5px;
+  --b3-border-radius: 4px
 }
 
 // 以下是软件框架设置
 
 // 侧栏（文档树、大纲）
 div.fn__flex-shrink {
-    font-size: 16px;
+  font-size: 16px;
 
-    div.block__logo {
-        font-family: "华文新魏";
-        font-size: 20px;
+  div.block__logo {
+    font-family: "华文新魏";
+    font-size: 20px;
+  }
+
+  li.b3-list-item .b3-list-item__icon {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+
+    img {
+      width: 25px;
+      height: 25px;
+      transform: translateX(2.5px);
     }
 
-    li.b3-list-item .b3-list-item__icon {
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        font-size: 20px;
-        text-align: center;
-
-        img {
-            width: 25px;
-            height: 25px;
-            transform: translateX(2.5px);
-        }
-
-        svg {
-            height: 23px;
-            width: 23px;
-            transform: translate(3px, 1px);
-        }
+    svg {
+      height: 23px;
+      width: 23px;
+      transform: translate(3px, 1px);
     }
+  }
 
-    span.b3-list-item__text {
-        transform: translateY(1px);
-    }
+  span.b3-list-item__text {
+    transform: translateY(1px);
+  }
 
-    div.sy__outline>div.b3-list-item .b3-list-item__graphic {
-        width: 25px;
-        height: 25px;
-    }
+  div.sy__outline>div.b3-list-item .b3-list-item__graphic {
+    width: 25px;
+    height: 25px;
+  }
 
 }
 
 // 内容区格子背景
 div.protyle-content {
-    background-image: linear-gradient(90deg, rgba(60, 10, 30, 0.06) 2%, transparent 0px), linear-gradient(1turn, rgba(60, 10, 30, 0.06) 2%, transparent 0px);
-    background-size: 30px 30px;
-    background-position: 50% center;
-    text-align: justify;
+  background-image: linear-gradient(90deg, rgba(60, 10, 30, 0.06) 2%, transparent 0px), linear-gradient(1turn, rgba(60, 10, 30, 0.06) 2%, transparent 0px);
+  background-size: 30px 30px;
+  background-position: 50% center;
+  text-align: justify;
 
-    div.protyle-title__input {
-        background-color: transparent;
-    }
+  div.protyle-title__input {
+    background-color: transparent;
+  }
 }
 
 // 微调标签页
 ul.layout-tab-bar:not(ul.layout-tab-bar--readonly) {
-    li.item {
-        max-width: 400px;
+  li.item {
+    max-width: 400px;
 
-        .item__icon {
-            padding-right: 8px;
-        }
-
-        span.item__text {
-            padding-left: 30px;
-            padding-right: 30px;
-        }
-
-        span.item__close {
-            padding: 8px;
-
-            svg {
-                opacity: 1 !important;
-            }
-        }
+    .item__icon {
+      padding-right: 8px;
     }
+
+    span.item__text {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    span.item__close {
+      padding: 8px;
+
+      svg {
+        opacity: 1 !important;
+        border-radius: 50%;
+      }
+    }
+  }
 }
 
 // 微调顶部工具栏项
 .toolbar__item {
-    margin-left: 1px;
+  margin-left: 1px;
 
-    span.toolbar__text {
-        color: #000 !important;
-    }
+  &#barWorkspace {
+    border-radius: 3px;
+  }
+
+  span.toolbar__text {
+    color: #000 !important;
+  }
 }
 
 .layout-tab-bar .item--focus:after {
-    background-color: var(--b3-theme-primary) !important;
+  background-color: var(--b3-theme-primary) !important;
 }
 
 // 调整侧栏按钮行为
 // 在相应工具栏开启时,始终保存下面状态
 .dock__item:hover,
 .dock__item--active {
-    color: var(--b3-theme-on-primary) !important;
-    background-color: var(--b3-theme-primary) !important;
+  color: var(--b3-theme-on-primary) !important;
+  background-color: var(--b3-theme-primary) !important;
 }
 
 //设置面板关闭按钮设置
 svg.b3-dialog__close {
-    height: 25px;
+  height: 25px;
+  width: 25px;
+  top: -4px;
+  right: -42px;
+
+  use {
     width: 25px;
-    top: -4px;
-    right: -42px;
-    color: #bfbfbf;
+    color: #696969;
+  }
 
-    use {
-        width: 25px;
-
-    }
-
-    transition: all .1s;
+  transition: all .1s;
 
 }
 
 svg.b3-dialog__close:hover {
-    // color: @--color-mian;
-    transform-origin: center;
-    transform: rotate(0.5turn);
+  // color: @--color-mian;
+  transform-origin: center;
+  transform: rotate(0.5turn);
 }
 
 // 已读按钮背景色
 button.b3-button--cancel[aria-label="已读"] {
-    background-color: #3575f0;
-    color: #f1f1f1;
+  background-color: #3575f0;
+  color: #f1f1f1;
 }
 
 // 行内字体面板
 div.protyle-font {
-    button.color__square {
-        width: 25px;
-        height: 25px;
-        border-radius: 2px;
-    }
+  button.color__square {
+    width: 25px;
+    height: 25px;
+    border-radius: 2px;
+  }
 }
 
 // 斜杠菜单
 // 斜杠菜单分栏
 div.protyle-hint {
-    padding: 8px;
-    padding-right: 0px;
+  padding: 8px;
+  padding-right: 0px;
 
-    button {
-        padding-top: 3px;
-        padding-bottom: 3px;
-        display: inline-block;
-        width: 45% !important;
-        border-radius: 2px !important;
-    }
+  button {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    display: inline-block;
+    width: 45% !important;
+    border-radius: 2px !important;
+  }
 }
 
 
 div.hint--menu {
-    div.color__square {
-        // box-sizing: border-box;
-        padding: 16px !important;
-        border-left: 5px solid #8c8c8c;
-        border-radius: 0.4rem;
-    }
+  div.color__square {
+    // box-sizing: border-box;
+    padding: 16px !important;
+    border-left: 5px solid #8c8c8c;
+    border-radius: 0.4rem;
+  }
 }
 
 // 所有的编辑器内样式设置均在此行下
@@ -264,26 +270,26 @@ div.hint--menu {
 // 表格块
 .protyle-wysiwyg table,
 .b3-typography table {
-    display: table;
-    width: 100%;
+  display: table;
+  width: 100%;
 
-    thead {
-        border-top: 0.15em solid @--color-mian !important;
-    }
+  thead {
+    border-top: 0.15em solid @--color-mian !important;
+  }
 
-    th,
-    td {
-        font-weight: normal !important;
-    }
+  th,
+  td {
+    font-weight: normal !important;
+  }
 
-    th,
-    td {
-        min-width: 1em;
-        border: 0.1em solid rgb(211, 211, 211) !important;
-        border-collapse: collapse;
-        color: inherit;
-        background-color: white !important;
-    }
+  th,
+  td {
+    min-width: 1em;
+    border: 0.1em solid rgb(211, 211, 211) !important;
+    border-collapse: collapse;
+    color: inherit;
+    background-color: white !important;
+  }
 
 }
 
@@ -292,14 +298,14 @@ div.hint--menu {
 .b3-typography .bq,
 .protyle-wysiwyg blockquote,
 .protyle-wysiwyg .bq {
-    padding: 0.5em;
-    color: #000;
-    border: 3px dashed @--color-mian;
-    background-color: #ffffff;
-    margin: 16px 0;
-    border-radius: 2px;
-    position: relative;
-    padding-left: 1.5em;
+  padding: 0.5em;
+  color: #000;
+  border: 3px dashed @--color-mian;
+  background-color: #ffffff;
+  margin: 16px 0;
+  border-radius: 2px;
+  position: relative;
+  padding-left: 1.5em;
 
 }
 
@@ -307,189 +313,189 @@ div.hint--menu {
 .b3-typography .bq::before,
 .protyle-wysiwyg blockquote::before,
 .protyle-wysiwyg .bq::before {
-    content: url(./icons/xingzuo.svg) !important;
-    position: absolute !important;
-    top: -22px !important;
-    left: -15px !important;
-    transform: rotate(329deg) !important;
-    // border-left: none !important;
+  content: url(./icons/xingzuo.svg) !important;
+  position: absolute !important;
+  top: -22px !important;
+  left: -15px !important;
+  transform: rotate(329deg) !important;
+  // border-left: none !important;
 }
 
 // 代码块
 .code-block {
-    margin: 4px !important;
-    border-radius: 4px !important;
-    background-color: #fafafa !important;
+  margin: 4px !important;
+  border-radius: 4px !important;
+  background-color: #fafafa !important;
 }
 
 .b3-typography div.hljs,
 .protyle-wysiwyg div.hljs {
-    padding-top: 4px !important;
-    padding-bottom: 4px !important;
-    padding-left: 16px;
-    padding-right: 16px;
-    font-family: @font-code;
-    background-size: 20px 20px;
-    background-image: none !important;
-    background: transparent;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-family: @font-code;
+  background-size: 20px 20px;
+  background-image: none !important;
+  background: transparent;
 }
 
 .protyle-wysiwyg .code-block,
 .b3-typography .code-block {
-    position: relative;
-    display: block;
-    border-radius: 4px;
-    padding-top: 32px !important;
-    box-shadow: 0px 0px 2px 0px #041b1538;
-    border-bottom: 2px solid #cfcece;
-    border-top: 3px solid @--color-mian;
+  position: relative;
+  display: block;
+  border-radius: 4px;
+  padding-top: 32px !important;
+  box-shadow: 0px 0px 2px 0px #041b1538;
+  border-bottom: 2px solid #cfcece;
+  border-top: 3px solid @--color-mian;
 }
 
 .code-block::after {
-    content: ' ';
-    position: absolute;
-    background: #fa625c;
-    box-shadow: 23px 0 #fdbc40, 45px 0 #35cd4b;
-    border-radius: 50%;
-    top: 10px;
-    left: 15px;
-    height: 12px;
-    width: 12px;
-    z-index: 1;
+  content: ' ';
+  position: absolute;
+  background: #fa625c;
+  box-shadow: 23px 0 #fdbc40, 45px 0 #35cd4b;
+  border-radius: 50%;
+  top: 10px;
+  left: 15px;
+  height: 12px;
+  width: 12px;
+  z-index: 1;
 }
 
 .protyle-linenumber__rows {
-    margin-top: 32px !important;
-    padding: 4px;
-    background-color: #fafafa !important;
-    margin-bottom: 0px;
-    font-family: @font-code;
+  margin-top: 32px !important;
+  padding: 4px;
+  background-color: #fafafa !important;
+  margin-bottom: 0px;
+  font-family: @font-code;
 }
 
 .protyle-linenumber__rows span::before {
-    color: rgba(128, 128, 128, 0.5);
+  color: rgba(128, 128, 128, 0.5);
 }
 
 .b3-typography .code-block .protyle-action .protyle-action__language,
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
-    margin-top: 0px;
-    position: absolute;
-    right: 4em;
-    border-radius: 4px;
-    opacity: 1 !important;
-    font-family: @font-code;
+  margin-top: 0px;
+  position: absolute;
+  right: 4em;
+  border-radius: 4px;
+  opacity: 1 !important;
+  font-family: @font-code;
 }
 
 .b3-typography .code-block .protyle-action .protyle-action__language::after,
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language::after {
-    content: "›";
-    font-family: @font-code;
-    color: #80808080;
-    opacity: 1;
+  content: "›";
+  font-family: @font-code;
+  color: #80808080;
+  opacity: 1;
 }
 
 .b3-typography .code-block .protyle-action .protyle-icon,
 .b3-typography .code-block .protyle-action .protyle-action__language,
 .protyle-wysiwyg .code-block .protyle-action .protyle-icon,
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
-    opacity: 1 !important;
-    background-color: transparent !important;
+  opacity: 1 !important;
+  background-color: transparent !important;
 }
 
 .b3-typography .code-block .protyle-action .protyle-icon svg,
 .b3-typography .code-block .protyle-action .protyle-action__language svg,
 .protyle-wysiwyg .code-block .protyle-action .protyle-icon svg,
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language svg {
-    color: gray;
+  color: gray;
 }
 
 // 集市里边代码块的主题
 code.hljs {
-    background-color: #fafafa !important;
-    // border-top: 3px solid #2ea121;
-    border-top: 3px solid @--color-mian;
-    border-bottom: 2px solid #cfcece;
-    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  background-color: #fafafa !important;
+  // border-top: 3px solid #2ea121;
+  border-top: 3px solid @--color-mian;
+  border-bottom: 2px solid #cfcece;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
 
 // 代码块下方增加内边距
 .protyle-wysiwyg .code-block,
 .b3-typography .code-block {
-    padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 // 代码种类输入框和选项字体
 .b3-menu,
 .protyle-util {
 
-    div.b3-list-item,
-    input {
-        font-family: @font-code;
-    }
+  div.b3-list-item,
+  input {
+    font-family: @font-code;
+  }
 }
 
 // 信息样式
 div[style*="color: var(--b3-card-info-color)"] {
-    padding: 16px !important;
-    border-left: 5px solid @--bordercolor-info !important;
-    border-radius: 0.4rem;
+  padding: 16px !important;
+  border-left: 5px solid @--bordercolor-info !important;
+  border-radius: 0.4rem;
 }
 
 // 错误样式
 div[style*="color: var(--b3-card-error-color)"] {
-    padding: 16px !important;
-    border-left: 5px solid @--bordercolor-error !important;
-    border-radius: 0.4rem;
+  padding: 16px !important;
+  border-left: 5px solid @--bordercolor-error !important;
+  border-radius: 0.4rem;
 }
 
 // 成功样式
 div[style*="color: var(--b3-card-success-color)"] {
-    padding: 16px !important;
-    border-left: 5px solid @--bordercolor-success !important;
-    border-radius: 0.4rem;
+  padding: 16px !important;
+  border-left: 5px solid @--bordercolor-success !important;
+  border-radius: 0.4rem;
 }
 
 // 警告样式
 div[style*="color: var(--b3-card-warning-color)"] {
-    padding: 16px !important;
-    border-left: 5px solid @--bordercolor-warning !important;
-    border-radius: 0.4rem;
+  padding: 16px !important;
+  border-left: 5px solid @--bordercolor-warning !important;
+  border-radius: 0.4rem;
 }
 
 // 分割线
 .protyle-wysiwyg [data-node-id].hr div {
-    border: none;
-    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-    height: 2px;
-    border-radius: 4px;
+  border: none;
+  background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  height: 2px;
+  border-radius: 4px;
 }
 
 // 行内样式
 // 背词模式
 span[data-type="text"][style*="background-color: var(--b3-font-background13);"] {
-    color: #FFFFFF;
-    border-bottom: 2px solid #000;
-    border-radius: 0 !important;
+  color: #FFFFFF;
+  border-bottom: 2px solid #000;
+  border-radius: 0 !important;
 }
 
 span[data-type="text"][style*="background-color: var(--b3-font-background13);"]:hover {
-    color: #000;
+  color: #000;
 }
 
 // 文字背景颜色微调
 span[data-type="text"][style*="background-color:"] {
-    padding-left: 3px;
-    padding-right: 3px;
-    border-radius: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 2px;
 }
 
 
 
 // 标记样式
 span[data-type="mark"] {
-    padding-left: 3px;
-    padding-right: 3px;
-    border-radius: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 2px;
 }
 
 // 键盘键样式
@@ -497,18 +503,18 @@ span[data-type="mark"] {
 .b3-typography span[data-type~=kbd],
 .protyle-wysiwyg kbd,
 .protyle-wysiwyg span[data-type~=kbd] {
-    display: inline-block;
-    background: linear-gradient(-225deg, #d5dbe4, #f8f8f8);
-    border-radius: 3px;
-    box-shadow: inset 0 -2px 0 0 #cdcde6, inset 0 0 1px 1px #fff, 0 1px 2px 1px rgba(30, 35, 90, 0.4);
-    color: #969faf;
-    padding: 5px 10px;
-    border: 0;
-    font-size: 16px;
-    font-family: @font-code !important;
-    transform: translateY(-2px);
-    margin-left: 4px;
-    margin-right: 4px;
+  display: inline-block;
+  background: linear-gradient(-225deg, #d5dbe4, #f8f8f8);
+  border-radius: 3px;
+  box-shadow: inset 0 -2px 0 0 #cdcde6, inset 0 0 1px 1px #fff, 0 1px 2px 1px rgba(30, 35, 90, 0.4);
+  color: #969faf;
+  padding: 5px 10px;
+  border: 0;
+  font-size: 16px;
+  font-family: @font-code !important;
+  transform: translateY(-2px);
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 // 行内代码
@@ -517,96 +523,96 @@ span[data-type="mark"] {
 .b3-typography span[data-type~=code],
 .protyle-wysiwyg code:not(.hljs),
 .protyle-wysiwyg span[data-type~=code] {
-    background-color: #f1f1f1;
-    color: #476582;
-    margin-left: 4px;
-    margin-right: 4px;
+  background-color: #f1f1f1;
+  color: #476582;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
 // 大纲里的代码样式
 li[data-treetype="outline"] span[data-type="code"] {
-    font-family: @font-code;
+  font-family: @font-code;
 }
 
 // 标题中的代码
 div[data-type="NodeHeading"] span[data-type="code"] {
-    // background-color: rgba(27, 31, 35, .05);
-    // color: #202124;
-    background-color: transparent;
-    color: inherit;
+  // background-color: rgba(27, 31, 35, .05);
+  // color: #202124;
+  background-color: transparent;
+  color: inherit;
 }
 
 // 对于13中样式设置在段落上的微调
 div[style*="background-color: var(--b3-font-background"] {
-    padding: 16px !important;
-    // border-radius: 0.4rem;
+  padding: 16px !important;
+  // border-radius: 0.4rem;
 }
 
 // 超级块
 .protyle-wysiwyg [data-node-id].sb[data-sb-layout=col]>div,
 .protyle-wysiwyg [data-node-id].sb[data-sb-layout=col] .sb {
-    border: 2px dashed #bfbfbf;
-    margin: 3px 3px;
+  border: 2px dashed #bfbfbf;
+  margin: 3px 3px;
 }
 
 // 隐藏超级块旁边的字符
 .protyle-attr {
-    opacity: 0 !important;
+  opacity: 0 !important;
 }
 
 // 引用块
 span[data-type="block-ref"] {
-    padding: 2px 5px;
-    color: #4b5cc4 !important;
-    font-weight: 500;
+  padding: 2px 5px;
+  color: #4b5cc4 !important;
+  font-weight: 500;
 }
 
 
 span[data-type="block-ref"]:hover {
-    background-color: #2e4e7e;
-    border-radius: 2px;
-    color: #E9F1F6 !important;
+  background-color: #2e4e7e;
+  border-radius: 2px;
+  color: #E9F1F6 !important;
 
 }
 
 // 链接块
 span[data-type="a"][data-href] {
-    font-weight: 500;
-    padding: 2px 5px;
-    border: none !important;
+  font-weight: 500;
+  padding: 2px 5px;
+  border: none !important;
 }
 
 // 面包屑导航微调
 .protyle-breadcrumb__item {
-    border-radius: 2px;
+  border-radius: 2px;
 }
 
 // 公式
 span.katex {
-    font-family: @font-math;
-    font-weight: 400 !important;
+  font-family: @font-math;
+  font-weight: 400 !important;
 }
 
 // 待办事项删除线
 .li[data-type="NodeListItem"].protyle-task--done {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 // 引用块新建按钮调整
 button[data-value*="((newFile"] {
-    padding: 9px 8px;
+  padding: 9px 8px;
 }
 
 // 调整市集预览图片的层级，以覆盖标题
 .config-bazaar__readme .item__preview--fullscreen {
-    z-index: 4;
+  z-index: 4;
 }
 
 // 备注文字样式
 .b3-typography span[data-type~=inline-memo],
 .protyle-wysiwyg span[data-type~=inline-memo] {
-    border-radius: 0;
-    padding: 0 4px 0 4px;
+  border-radius: 0;
+  padding: 0 4px 0 4px;
 }
 
 // 标题样式
@@ -615,25 +621,25 @@ button[data-value*="((newFile"] {
 .b3-typography h1,
 .protyle-wysiwyg .h1,
 .protyle-wysiwyg h1 {
-    color: #d83931;
-    position: relative;
-    font-weight: 400 !important;
-    z-index: 2 !important;
+  color: #d83931;
+  position: relative;
+  font-weight: 400 !important;
+  z-index: 2 !important;
 }
 
 .b3-typography .h1::after,
 .b3-typography h1::after,
 .protyle-wysiwyg .h1::after,
 .protyle-wysiwyg h1::after {
-    content: "";
-    position: absolute;
-    width: 50%;
-    height: 18px;
-    border-radius: 50px;
-    background-color: #fbbfbc;
-    top: 23px;
-    left: -1px;
-    z-index: -1 !important;
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 18px;
+  border-radius: 50px;
+  background-color: #fbbfbc;
+  top: 23px;
+  left: -1px;
+  z-index: -1 !important;
 }
 
 // 二级标题
@@ -641,25 +647,25 @@ button[data-value*="((newFile"] {
 .b3-typography h2,
 .protyle-wysiwyg .h2,
 .protyle-wysiwyg h2 {
-    color: #de7802;
-    position: relative;
-    font-weight: 400 !important;
-    z-index: 2 !important;
+  color: #de7802;
+  position: relative;
+  font-weight: 400 !important;
+  z-index: 2 !important;
 }
 
 .b3-typography .h2::after,
 .b3-typography h2::after,
 .protyle-wysiwyg .h2::after,
 .protyle-wysiwyg h2::after {
-    content: "";
-    position: absolute;
-    width: 45%;
-    height: 16px;
-    border-radius: 50px;
-    background-color: #fed4a4;
-    top: 20px;
-    left: -1px;
-    z-index: -1 !important;
+  content: "";
+  position: absolute;
+  width: 45%;
+  height: 16px;
+  border-radius: 50px;
+  background-color: #fed4a4;
+  top: 20px;
+  left: -1px;
+  z-index: -1 !important;
 }
 
 // 三级标题
@@ -667,25 +673,25 @@ button[data-value*="((newFile"] {
 .b3-typography h3,
 .protyle-wysiwyg .h3,
 .protyle-wysiwyg h3 {
-    color: #856404;
-    position: relative;
-    font-weight: 400 !important;
-    z-index: 2 !important;
+  color: #856404;
+  position: relative;
+  font-weight: 400 !important;
+  z-index: 2 !important;
 }
 
 .b3-typography .h3::after,
 .b3-typography h3::after,
 .protyle-wysiwyg .h3::after,
 .protyle-wysiwyg h3::after {
-    content: "";
-    position: absolute;
-    width: 40%;
-    height: 14px;
-    border-radius: 50px;
-    background-color: #ffe9a1;
-    top: 16px;
-    left: -1px;
-    z-index: -1 !important;
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 14px;
+  border-radius: 50px;
+  background-color: #ffe9a1;
+  top: 16px;
+  left: -1px;
+  z-index: -1 !important;
 }
 
 // 四级标题
@@ -693,25 +699,25 @@ button[data-value*="((newFile"] {
 .b3-typography h4,
 .protyle-wysiwyg .h4,
 .protyle-wysiwyg h4 {
-    color: #2ea121;
-    position: relative;
-    font-weight: 400 !important;
-    z-index: 2 !important;
+  color: #2ea121;
+  position: relative;
+  font-weight: 400 !important;
+  z-index: 2 !important;
 }
 
 .b3-typography .h4::after,
 .b3-typography h4::after,
 .protyle-wysiwyg .h4::after,
 .protyle-wysiwyg h4::after {
-    content: "";
-    position: absolute;
-    width: 35%;
-    height: 12px;
-    border-radius: 50px;
-    background-color: #b7edb1;
-    top: 15px;
-    left: -1px;
-    z-index: -1 !important;
+  content: "";
+  position: absolute;
+  width: 35%;
+  height: 12px;
+  border-radius: 50px;
+  background-color: #b7edb1;
+  top: 15px;
+  left: -1px;
+  z-index: -1 !important;
 }
 
 // 五级标题
@@ -719,25 +725,25 @@ button[data-value*="((newFile"] {
 .b3-typography h5,
 .protyle-wysiwyg .h5,
 .protyle-wysiwyg h5 {
-    color: #35737d;
-    position: relative;
-    font-weight: 400 !important;
-    z-index: 2 !important;
+  color: #35737d;
+  position: relative;
+  font-weight: 400 !important;
+  z-index: 2 !important;
 }
 
 .b3-typography .h5::after,
 .b3-typography h5::after,
 .protyle-wysiwyg .h5::after,
 .protyle-wysiwyg h5::after {
-    content: "";
-    position: absolute;
-    width: 30%;
-    height: 10px;
-    border-radius: 50px;
-    background-color: #d1ecf1;
-    top: 15px;
-    left: -1px;
-    z-index: -1 !important;
+  content: "";
+  position: absolute;
+  width: 30%;
+  height: 10px;
+  border-radius: 50px;
+  background-color: #d1ecf1;
+  top: 15px;
+  left: -1px;
+  z-index: -1 !important;
 }
 
 // 六级标题
@@ -745,79 +751,79 @@ button[data-value*="((newFile"] {
 .b3-typography h6,
 .protyle-wysiwyg .h6,
 .protyle-wysiwyg h6 {
-    color: #245bdb;
-    position: relative;
-    font-weight: 400 !important;
-    z-index: 2 !important;
+  color: #245bdb;
+  position: relative;
+  font-weight: 400 !important;
+  z-index: 2 !important;
 }
 
 .b3-typography .h6::after,
 .b3-typography h6::after,
 .protyle-wysiwyg .h6::after,
 .protyle-wysiwyg h6::after {
-    content: "";
-    position: absolute;
-    width: 25%;
-    height: 8px;
-    border-radius: 50px;
-    background-color: #bacefd;
-    top: 15px;
-    left: -1px;
-    z-index: -1 !important;
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 8px;
+  border-radius: 50px;
+  background-color: #bacefd;
+  top: 15px;
+  left: -1px;
+  z-index: -1 !important;
 }
 
 // 嵌入块
 .protyle-wysiwyg [data-node-id].render-node[data-type=NodeBlockQueryEmbed] {
-    background-color: #fff;
-    border: #0c83f2 2px solid;
-    padding: 20px;
-    border-radius: 4px;
-    position: relative;
+  background-color: #fff;
+  border: #0c83f2 2px solid;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
 }
 
 .protyle-wysiwyg [data-node-id].render-node[data-type=NodeBlockQueryEmbed]::before {
-    content: url(./icons/link.svg);
-    position: absolute;
-    left: -15px;
-    top: -17px;
+  content: url(./icons/link.svg);
+  position: absolute;
+  left: -15px;
+  top: -17px;
 }
 
 // 设置界面主题等选框
 .b3-select {
-    font-size: 13px;
-    border-radius: 4px;
-    height: 28px;
-    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-    padding: 4px 8px;
-    line-height: 20px;
-    background-color: rgba(243, 243, 243);
+  font-size: 13px;
+  border-radius: 4px;
+  height: 28px;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+  padding: 4px 8px;
+  line-height: 20px;
+  background-color: rgba(243, 243, 243);
 }
 
 // 修改设置界面
 div.config__panel>ul {
-    width: 250px !important;
+  width: 250px !important;
 
-    >li {
-        padding: 10px;
-    }
+  >li {
+    padding: 5px;
+  }
 }
 
 // 修改只读模式下的鼠标状态
 div.protyle-content--transition .protyle-wysiwyg[contenteditable="false"] {
-    cursor: auto;
+  cursor: auto;
 }
 
 span[data-type="block-ref"] {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .b3-typography img,
 .protyle-wysiwyg img {
-    border: 1px solid rgba(5, 5, 5, 0.06);
-    margin-bottom: 10px;
+  border: 1px solid rgba(5, 5, 5, 0.06);
+  margin-bottom: 10px;
 }
 
 .b3-typography img:hover,
 .protyle-wysiwyg img:hover {
-    box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+  box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
 }

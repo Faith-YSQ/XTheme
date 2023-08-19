@@ -100,6 +100,8 @@ div[data-type="NodeParagraph"][style*="background-color: var("][custom-y~=border
   --b3-font-background11: #efdbff;
   --b3-font-background12: #ffd6e7;
   --b3-font-background13: transparent;
+  --b3-border-radius-b: 5px;
+  --b3-border-radius: 4px;
 }
 div.fn__flex-shrink {
   font-size: 16px;
@@ -156,9 +158,13 @@ ul.layout-tab-bar:not(ul.layout-tab-bar--readonly) li.item span.item__close {
 }
 ul.layout-tab-bar:not(ul.layout-tab-bar--readonly) li.item span.item__close svg {
   opacity: 1 !important;
+  border-radius: 50%;
 }
 .toolbar__item {
   margin-left: 1px;
+}
+.toolbar__item#barWorkspace {
+  border-radius: 3px;
 }
 .toolbar__item span.toolbar__text {
   color: #000 !important;
@@ -176,11 +182,11 @@ svg.b3-dialog__close {
   width: 25px;
   top: -4px;
   right: -42px;
-  color: #bfbfbf;
   transition: all 0.1s;
 }
 svg.b3-dialog__close use {
   width: 25px;
+  color: #696969;
 }
 svg.b3-dialog__close:hover {
   transform-origin: center;
@@ -253,7 +259,7 @@ div.hint--menu div.color__square {
 .b3-typography .bq::before,
 .protyle-wysiwyg blockquote::before,
 .protyle-wysiwyg .bq::before {
-  content: url(icons/xingzuo.svg) !important;
+  content: url(./icons/xingzuo.svg) !important;
   position: absolute !important;
   top: -22px !important;
   left: -15px !important;
@@ -623,7 +629,7 @@ button[data-value*="((newFile"] {
   position: relative;
 }
 .protyle-wysiwyg [data-node-id].render-node[data-type=NodeBlockQueryEmbed]::before {
-  content: url(icons/link.svg);
+  content: url(./icons/link.svg);
   position: absolute;
   left: -15px;
   top: -17px;
@@ -641,7 +647,7 @@ div.config__panel > ul {
   width: 250px !important;
 }
 div.config__panel > ul > li {
-  padding: 10px;
+  padding: 5px;
 }
 div.protyle-content--transition .protyle-wysiwyg[contenteditable="false"] {
   cursor: auto;
