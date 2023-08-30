@@ -33,26 +33,26 @@ div[data-type="NodeCodeBlock"][style="color: var(--b3-card-error-color); backgro
 button#refresh {
   padding-right: 4px;
 }
-div.b3-menu__submenu > button.b3-menu__item:has(>img.b3-menu__icon) {
+div.b3-menu__submenu > div.b3-menu__items > button.b3-menu__item:has(>img.b3-menu__icon) {
   padding: 0 12px;
   padding-left: 5px;
 }
-div.b3-menu__submenu > button.b3-menu__item:has(>img.b3-menu__icon) span.b3-menu__accelerator {
+div.b3-menu__submenu > div.b3-menu__items > button.b3-menu__item:has(>img.b3-menu__icon) span.b3-menu__accelerator {
   display: none;
 }
-div.b3-menu__submenu > button.b3-menu__item:has(>img.b3-menu__icon) img.b3-menu__icon {
+div.b3-menu__submenu > div.b3-menu__items > button.b3-menu__item:has(>img.b3-menu__icon) img.b3-menu__icon {
   width: 20px;
   height: 20px;
   margin-left: 8px;
 }
-div.b3-menu__submenu > button.b3-menu__item:has(>span.b3-menu__icon) {
+div.b3-menu__submenu > div.b3-menu__items > button.b3-menu__item:has(>span.b3-menu__icon) {
   padding: 0 12px;
   padding-left: 5px;
 }
-div.b3-menu__submenu > button.b3-menu__item:has(>span.b3-menu__icon) span.b3-menu__accelerator {
+div.b3-menu__submenu > div.b3-menu__items > button.b3-menu__item:has(>span.b3-menu__icon) span.b3-menu__accelerator {
   display: none;
 }
-div.b3-menu__submenu > button.b3-menu__item:has(>span.b3-menu__icon) span.b3-menu__icon {
+div.b3-menu__submenu > div.b3-menu__items > button.b3-menu__item:has(>span.b3-menu__icon) span.b3-menu__icon {
   width: 20px;
   height: 20px;
   font-size: 20px;
