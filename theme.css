@@ -234,7 +234,6 @@ div.hint--menu div.color__square {
 }
 .protyle-wysiwyg table,
 .b3-typography table {
-  display: table;
   width: 100%;
 }
 .protyle-wysiwyg table thead,
@@ -674,6 +673,7 @@ span[data-type="block-ref"] {
 .protyle-wysiwyg img {
   border: 1px solid rgba(5, 5, 5, 0.06);
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 .b3-typography img:hover,
 .protyle-wysiwyg img:hover {
