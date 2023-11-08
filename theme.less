@@ -322,106 +322,71 @@ div.hint--menu {
 }
 
 // 代码块
-.code-block {
-  margin: 4px !important;
-  border-radius: 4px !important;
-  background-color: #fafafa !important;
-}
-
-.b3-typography div.hljs,
-.protyle-wysiwyg div.hljs {
-  padding-top: 4px !important;
-  padding-bottom: 4px !important;
-  padding-left: 16px;
-  padding-right: 16px;
-  font-family: @font-code;
-  background-size: 20px 20px;
-  background-image: none !important;
-  background: transparent;
-}
-
-.protyle-wysiwyg .code-block,
-.b3-typography .code-block {
-  position: relative;
-  display: block;
-  border-radius: 4px;
-  padding-top: 32px !important;
-  box-shadow: 0px 0px 2px 0px #041b1538;
-  border-bottom: 2px solid #cfcece;
+.b3-typography .code-block,
+.protyle-wysiwyg .code-block {
   border-top: 3px solid @--color-mian;
-}
-
-.code-block::after {
-  content: ' ';
-  position: absolute;
-  background: #fa625c;
-  box-shadow: 23px 0 #fdbc40, 45px 0 #35cd4b;
-  border-radius: 50%;
-  top: 10px;
-  left: 15px;
-  height: 12px;
-  width: 12px;
-  z-index: 1;
-}
-
-.protyle-linenumber__rows {
-  margin-top: 32px !important;
-  padding: 4px;
-  background-color: #fafafa !important;
-  margin-bottom: 0px;
-  font-family: @font-code;
-}
-
-.protyle-linenumber__rows span::before {
-  color: rgba(128, 128, 128, 0.5);
-}
-
-.b3-typography .code-block .protyle-action .protyle-action__language,
-.protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
-  margin-top: 0px;
-  position: absolute;
-  right: 4em;
+  box-shadow: 0px 0px 2px 0px #041b1538;
   border-radius: 4px;
-  opacity: 1 !important;
-  font-family: @font-code;
-}
+  margin: 0 0;
 
-.b3-typography .code-block .protyle-action .protyle-action__language::after,
-.protyle-wysiwyg .code-block .protyle-action .protyle-action__language::after {
-  content: "›";
-  font-family: @font-code;
-  color: #80808080;
-  opacity: 1;
+  .hljs {
+    background-color: #fafafa !important;
+  }
+
+
+  .protyle-action {
+    display: flex;
+
+    .protyle-action__copy,
+    .protyle-action__menu {
+      color: #5f6368;
+    }
+
+    .protyle-action__language {
+      position: relative;
+      // font-weight: 700;
+    }
+
+    .protyle-action__language::after {
+      content: '>>>';
+      position: absolute;
+      top: 5px;
+      left: -41px;
+      font-weight: 700;
+      // font-size: 150%;
+
+    }
+
+    .protyle-icon {
+      background-color: transparent !important;
+    }
+
+  }
+
+  span.protyle-action--first.protyle-action__language {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .b3-typography .code-block .protyle-action .protyle-icon,
 .b3-typography .code-block .protyle-action .protyle-action__language,
 .protyle-wysiwyg .code-block .protyle-action .protyle-icon,
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
-  opacity: 1 !important;
-  background-color: transparent !important;
+  opacity: 1;
 }
 
-.b3-typography .code-block .protyle-action .protyle-icon svg,
-.b3-typography .code-block .protyle-action .protyle-action__language svg,
-.protyle-wysiwyg .code-block .protyle-action .protyle-icon svg,
-.protyle-wysiwyg .code-block .protyle-action .protyle-action__language svg {
-  color: gray;
+.protyle-linenumber__rows {
+  padding-top: 2.6em;
 }
 
-// 集市里边代码块的主题
-code.hljs {
-  background-color: #fafafa !important;
-  // border-top: 3px solid #2ea121;
-  border-top: 3px solid @--color-mian;
-  border-bottom: 2px solid #cfcece;
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+.b3-typography .hljs,
+.protyle-wysiwyg .hljs {
+  padding-top: 2.6em;
 }
 
-// 代码块下方增加内边距
-.protyle-wysiwyg .code-block,
-.b3-typography .code-block {
-  padding-bottom: 15px;
+.protyle-linenumber__rows>span::before {
+  text-align: center;
 }
 
 // 代码种类输入框和选项字体

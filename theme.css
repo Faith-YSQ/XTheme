@@ -279,92 +279,63 @@ div.hint--menu div.color__square {
   left: -15px !important;
   transform: rotate(329deg) !important;
 }
-.code-block {
-  margin: 4px !important;
-  border-radius: 4px !important;
-  background-color: #fafafa !important;
-}
-.b3-typography div.hljs,
-.protyle-wysiwyg div.hljs {
-  padding-top: 4px !important;
-  padding-bottom: 4px !important;
-  padding-left: 16px;
-  padding-right: 16px;
-  font-family: "JetBrainsMono Nerd Font";
-  background-size: 20px 20px;
-  background-image: none !important;
-  background: transparent;
-}
-.protyle-wysiwyg .code-block,
-.b3-typography .code-block {
-  position: relative;
-  display: block;
-  border-radius: 4px;
-  padding-top: 32px !important;
-  box-shadow: 0px 0px 2px 0px #041b1538;
-  border-bottom: 2px solid #cfcece;
+.b3-typography .code-block,
+.protyle-wysiwyg .code-block {
   border-top: 3px solid #0c83f2;
+  box-shadow: 0px 0px 2px 0px #041b1538;
+  border-radius: 4px;
+  margin: 0 0;
 }
-.code-block::after {
-  content: ' ';
-  position: absolute;
-  background: #fa625c;
-  box-shadow: 23px 0 #fdbc40, 45px 0 #35cd4b;
-  border-radius: 50%;
-  top: 10px;
-  left: 15px;
-  height: 12px;
-  width: 12px;
-  z-index: 1;
-}
-.protyle-linenumber__rows {
-  margin-top: 32px !important;
-  padding: 4px;
+.b3-typography .code-block .hljs,
+.protyle-wysiwyg .code-block .hljs {
   background-color: #fafafa !important;
-  margin-bottom: 0px;
-  font-family: "JetBrainsMono Nerd Font";
 }
-.protyle-linenumber__rows span::before {
-  color: rgba(128, 128, 128, 0.5);
+.b3-typography .code-block .protyle-action,
+.protyle-wysiwyg .code-block .protyle-action {
+  display: flex;
+}
+.b3-typography .code-block .protyle-action .protyle-action__copy,
+.protyle-wysiwyg .code-block .protyle-action .protyle-action__copy,
+.b3-typography .code-block .protyle-action .protyle-action__menu,
+.protyle-wysiwyg .code-block .protyle-action .protyle-action__menu {
+  color: #5f6368;
 }
 .b3-typography .code-block .protyle-action .protyle-action__language,
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
-  margin-top: 0px;
-  position: absolute;
-  right: 4em;
-  border-radius: 4px;
-  opacity: 1 !important;
-  font-family: "JetBrainsMono Nerd Font";
+  position: relative;
 }
 .b3-typography .code-block .protyle-action .protyle-action__language::after,
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language::after {
-  content: "›";
-  font-family: "JetBrainsMono Nerd Font";
-  color: #80808080;
-  opacity: 1;
+  content: '>>>';
+  position: absolute;
+  top: 5px;
+  left: -41px;
+  font-weight: 700;
+}
+.b3-typography .code-block .protyle-action .protyle-icon,
+.protyle-wysiwyg .code-block .protyle-action .protyle-icon {
+  background-color: transparent !important;
+}
+.b3-typography .code-block span.protyle-action--first.protyle-action__language,
+.protyle-wysiwyg .code-block span.protyle-action--first.protyle-action__language {
+  display: flex;
+  flex-direction: column-reverse;
 }
 .b3-typography .code-block .protyle-action .protyle-icon,
 .b3-typography .code-block .protyle-action .protyle-action__language,
 .protyle-wysiwyg .code-block .protyle-action .protyle-icon,
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
-  opacity: 1 !important;
-  background-color: transparent !important;
+  opacity: 1;
 }
-.b3-typography .code-block .protyle-action .protyle-icon svg,
-.b3-typography .code-block .protyle-action .protyle-action__language svg,
-.protyle-wysiwyg .code-block .protyle-action .protyle-icon svg,
-.protyle-wysiwyg .code-block .protyle-action .protyle-action__language svg {
-  color: gray;
+.protyle-linenumber__rows {
+  padding-top: 2.6em;
 }
-code.hljs {
-  background-color: #fafafa !important;
-  border-top: 3px solid #0c83f2;
-  border-bottom: 2px solid #cfcece;
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+.b3-typography .hljs,
+.protyle-wysiwyg .hljs {
+  padding-top: 2.6em;
 }
-.protyle-wysiwyg .code-block,
-.b3-typography .code-block {
-  padding-bottom: 15px;
+.protyle-linenumber__rows > span::before {
+  text-align: center;
 }
 .b3-menu div.b3-list-item,
 .protyle-util div.b3-list-item,
