@@ -363,11 +363,10 @@ div[style*="color: var(--b3-card-warning-color)"] {
   border-left: 5px solid #e6a700 !important;
   border-radius: 0.4rem;
 }
-.protyle-wysiwyg [data-node-id].hr div {
-  border: none;
+.protyle-wysiwyg [data-node-id].hr > div:after {
+  height: 5px;
+  border-radius: 20px;
   background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-  height: 2px;
-  border-radius: 4px;
 }
 span[data-type="text"][style*="background-color: var(--b3-font-background13);"] {
   color: #FFFFFF;
