@@ -74,8 +74,8 @@ div[data-type="NodeParagraph"][style*="background-color: var("][custom-y~=border
   border: 2px dashed #bfbfbf;
 }
 :root {
-  --b3-font-family: "JetBrainsMono Nerd Font";
-  --b3-font-family-code: "JetBrainsMono Nerd Font";
+  --b3-font-family: "JetBrainsMonoNL Nerd Font";
+  --b3-font-family-code: "JetBrainsMonoNL Nerd Font";
   --b3-font-family-math: "Cambria Math", "KaTeX_Math", "华文楷体";
   --b3-toolbar-background: #f7f8fa;
   --b3-toolbar-blur-background: #f7f8fa;
@@ -308,7 +308,7 @@ div.hint--menu div.color__square {
 .protyle-wysiwyg .code-block .protyle-action .protyle-action__language::after {
   content: '>>>';
   position: absolute;
-  top: 5px;
+  top: 0;
   left: -41px;
   font-weight: 700;
 }
@@ -341,7 +341,7 @@ div.hint--menu div.color__square {
 .protyle-util div.b3-list-item,
 .b3-menu input,
 .protyle-util input {
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "JetBrainsMonoNL Nerd Font";
 }
 div[style*="color: var(--b3-card-info-color)"] {
   padding: 16px !important;
@@ -398,7 +398,7 @@ span[data-type="mark"] {
   padding: 5px 10px;
   border: 0;
   font-size: 16px;
-  font-family: "JetBrainsMono Nerd Font" !important;
+  font-family: "JetBrainsMonoNL Nerd Font" !important;
   transform: translateY(-2px);
   margin-left: 4px;
   margin-right: 4px;
@@ -414,7 +414,7 @@ span[data-type="mark"] {
   margin-right: 4px;
 }
 li[data-treetype="outline"] span[data-type="code"] {
-  font-family: "JetBrainsMono Nerd Font";
+  font-family: "JetBrainsMonoNL Nerd Font";
 }
 div[data-type="NodeHeading"] span[data-type="code"] {
   background-color: transparent;
@@ -648,4 +648,10 @@ span[data-type="block-ref"] {
 .b3-typography img:hover,
 .protyle-wysiwyg img:hover {
   box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+}
+div.status #barDock {
+  margin-left: 3px;
+}
+div.status #statusHelp {
+  margin-right: 4px;
 }

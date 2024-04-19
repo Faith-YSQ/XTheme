@@ -8,10 +8,11 @@
 // @font-mian: "霞鹜文楷";
 // @font-mian: "方正GDC体 简";
 // @font-mian: "苹方-简";
-@font-mian: "JetBrainsMono Nerd Font";
-@font-mian: "JetBrainsMono Nerd Font";
-@font-code: "JetBrainsMono Nerd Font";
+@font-mian: "JetBrainsMonoNL Nerd Font";
+@font-mian: "JetBrainsMonoNL Nerd Font";
+@font-code: "JetBrainsMonoNL Nerd Font";
 @font-math: "Cambria Math", "KaTeX_Math", "华文楷体";
+
 
 // 主题依赖颜色
 @--color-mian: #0c83f2;
@@ -351,7 +352,7 @@ div.hint--menu {
     .protyle-action__language::after {
       content: '>>>';
       position: absolute;
-      top: 5px;
+      top: 0;
       left: -41px;
       font-weight: 700;
       // font-size: 150%;
@@ -799,4 +800,14 @@ span[data-type="block-ref"] {
 .b3-typography img:hover,
 .protyle-wysiwyg img:hover {
   box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), 0 3px 6px 0 rgba(0, 0, 0, 0.12), 0 5px 12px 4px rgba(0, 0, 0, 0.09);
+}
+
+// 底部状态栏
+div.status {
+  #barDock {
+    margin-left: 3px;
+  }
+  #statusHelp {
+    margin-right: 4px;
+  }
 }
