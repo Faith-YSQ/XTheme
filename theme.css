@@ -74,8 +74,8 @@ div[data-type="NodeParagraph"][style*="background-color: var("][custom-y~=border
   border: 2px dashed #bfbfbf;
 }
 :root {
-  --b3-font-family: "JetBrainsMonoNL Nerd Font";
-  --b3-font-family-code: "JetBrainsMonoNL Nerd Font";
+  --b3-font-family: "DM Mono";
+  --b3-font-family-code: "DM Mono";
   --b3-font-family-math: "Cambria Math", "KaTeX_Math", "华文楷体";
   --b3-toolbar-background: #f7f8fa;
   --b3-toolbar-blur-background: #f7f8fa;
@@ -341,7 +341,7 @@ div.hint--menu div.color__square {
 .protyle-util div.b3-list-item,
 .b3-menu input,
 .protyle-util input {
-  font-family: "JetBrainsMonoNL Nerd Font";
+  font-family: "DM Mono";
 }
 div[style*="color: var(--b3-card-info-color)"] {
   padding: 16px !important;
@@ -398,7 +398,7 @@ span[data-type="mark"] {
   padding: 5px 10px;
   border: 0;
   font-size: 16px;
-  font-family: "JetBrainsMonoNL Nerd Font" !important;
+  font-family: "DM Mono" !important;
   transform: translateY(-2px);
   margin-left: 4px;
   margin-right: 4px;
@@ -414,7 +414,7 @@ span[data-type="mark"] {
   margin-right: 4px;
 }
 li[data-treetype="outline"] span[data-type="code"] {
-  font-family: "JetBrainsMonoNL Nerd Font";
+  font-family: "DM Mono";
 }
 div[data-type="NodeHeading"] span[data-type="code"] {
   background-color: transparent;
@@ -654,4 +654,5 @@ div.status #barDock {
 }
 div.status #statusHelp {
   margin-right: 4px;
+  margin-left: 6px;
 }
