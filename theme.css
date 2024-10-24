@@ -216,21 +216,8 @@ div.protyle-font button.color__square {
   height: 25px;
   border-radius: 2px;
 }
-div.protyle-hint {
-  padding: 8px;
-  padding-right: 0px;
-}
-div.protyle-hint button {
-  padding-top: 3px;
-  padding-bottom: 3px;
-  display: inline-block;
-  width: 45% !important;
-  border-radius: 2px !important;
-}
-div.hint--menu div.color__square {
-  padding: 16px !important;
-  border-left: 5px solid #8c8c8c;
-  border-radius: 0.4rem;
+div.hint--menu {
+  width: 300px !important;
 }
 .protyle-wysiwyg table,
 .b3-typography table {
@@ -328,6 +315,11 @@ div[style*="color: var(--b3-card-success-color)"] {
 div[style*="color: var(--b3-card-warning-color)"] {
   padding: 16px !important;
   border-left: 5px solid #e6a700 !important;
+  border-radius: 0.4rem;
+}
+div.color__square {
+  padding: 16px !important;
+  border-left: 5px solid #000;
   border-radius: 0.4rem;
 }
 .protyle-wysiwyg [data-node-id].hr > div:after {
