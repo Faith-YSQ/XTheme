@@ -74,8 +74,8 @@ div[data-type="NodeParagraph"][style*="background-color: var("][custom-y~=border
   border: 2px dashed #bfbfbf;
 }
 :root {
-  --b3-font-family: "DM Mono";
-  --b3-font-family-code: "DM Mono";
+  --b3-font-family: "DMMono Nerd Font";
+  --b3-font-family-code: "DMMono Nerd Font";
   --b3-font-family-math: "Cambria Math", "KaTeX_Math", "华文楷体";
   --b3-toolbar-background: #f7f8fa;
   --b3-toolbar-blur-background: #f7f8fa;
@@ -279,69 +279,36 @@ div.hint--menu div.color__square {
   left: -15px !important;
   transform: rotate(329deg) !important;
 }
-.b3-typography .code-block,
-.protyle-wysiwyg .code-block {
-  border-top: 3px solid #0c83f2;
-  box-shadow: 0px 0px 2px 0px #041b1538;
-  border-radius: 4px;
-  margin: 7px 0;
+div[data-type="NodeCodeBlock"] {
+  padding-left: 2em;
+  padding-right: 2em;
+  border-top: 2px solid #0c83f2;
+  background-color: #FAFAFA !important;
+  box-shadow: 0px 2px 7px 0px rgba(100, 100, 111, 0.2);
 }
-.b3-typography .code-block .hljs,
-.protyle-wysiwyg .code-block .hljs {
-  background-color: #fafafa !important;
+div[data-type="NodeCodeBlock"] div.protyle-action {
+  margin: 10px 10px;
 }
-.b3-typography .code-block .protyle-action,
-.protyle-wysiwyg .code-block .protyle-action {
-  display: flex;
+div[data-type="NodeCodeBlock"] div.protyle-action::before {
+  content: url("./icons/macicon.svg");
+  width: 60px;
+  margin-right: 15px;
 }
-.b3-typography .code-block .protyle-action .protyle-action__copy,
-.protyle-wysiwyg .code-block .protyle-action .protyle-action__copy,
-.b3-typography .code-block .protyle-action .protyle-action__menu,
-.protyle-wysiwyg .code-block .protyle-action .protyle-action__menu {
-  color: #5f6368;
+div[data-type="NodeCodeBlock"] div.hljs {
+  margin-top: 20px;
 }
-.b3-typography .code-block .protyle-action .protyle-action__language,
-.protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
-  position: relative;
+div[data-type="NodeCodeBlock"] span {
+  opacity: 1 !important;
 }
-.b3-typography .code-block .protyle-action .protyle-action__language::after,
-.protyle-wysiwyg .code-block .protyle-action .protyle-action__language::after {
-  content: '>>>';
-  position: absolute;
-  top: 0;
-  left: -41px;
-  font-weight: 700;
-}
-.b3-typography .code-block .protyle-action .protyle-icon,
-.protyle-wysiwyg .code-block .protyle-action .protyle-icon {
+div[data-type="NodeCodeBlock"] span.protyle-icon {
   background-color: transparent !important;
-}
-.b3-typography .code-block span.protyle-action--first.protyle-action__language,
-.protyle-wysiwyg .code-block span.protyle-action--first.protyle-action__language {
-  display: flex;
-  flex-direction: column-reverse;
-}
-.b3-typography .code-block .protyle-action .protyle-icon,
-.b3-typography .code-block .protyle-action .protyle-action__language,
-.protyle-wysiwyg .code-block .protyle-action .protyle-icon,
-.protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
-  opacity: 1;
-}
-.protyle-linenumber__rows {
-  padding-top: 2.6em;
-}
-.b3-typography .hljs,
-.protyle-wysiwyg .hljs {
-  padding-top: 2.6em;
-}
-.protyle-linenumber__rows > span::before {
-  text-align: center;
+  color: #717479;
 }
 .b3-menu div.b3-list-item,
 .protyle-util div.b3-list-item,
 .b3-menu input,
 .protyle-util input {
-  font-family: "DM Mono";
+  font-family: "DMMono Nerd Font";
 }
 div[style*="color: var(--b3-card-info-color)"] {
   padding: 16px !important;
@@ -398,7 +365,7 @@ span[data-type="mark"] {
   padding: 5px 10px;
   border: 0;
   font-size: 16px;
-  font-family: "DM Mono" !important;
+  font-family: "DMMono Nerd Font" !important;
   transform: translateY(-2px);
   margin-left: 4px;
   margin-right: 4px;
@@ -414,7 +381,7 @@ span[data-type="mark"] {
   margin-right: 4px;
 }
 li[data-treetype="outline"] span[data-type="code"] {
-  font-family: "DM Mono";
+  font-family: "DMMono Nerd Font";
 }
 div[data-type="NodeHeading"] span[data-type="code"] {
   background-color: transparent;

@@ -8,9 +8,9 @@
 // @font-mian: "霞鹜文楷";
 // @font-mian: "方正GDC体 简";
 // @font-mian: "苹方-简";
-@font-mian: "DM Mono";
+@font-mian: "DMMono Nerd Font";
 // @font-mian: "JetBrainsMonoNL Nerd Font";
-@font-code: "DM Mono";
+@font-code: "DMMono Nerd Font";
 // @font-code: "JetBrainsMonoNL Nerd Font";
 @font-math: "Cambria Math", "KaTeX_Math", "华文楷体";
 
@@ -325,72 +325,40 @@ div.hint--menu {
 }
 
 // 代码块
-.b3-typography .code-block,
-.protyle-wysiwyg .code-block {
-  border-top: 3px solid @--color-mian;
-  box-shadow: 0px 0px 2px 0px #041b1538;
-  border-radius: 4px;
-  margin: 7px 0;
+div[data-type="NodeCodeBlock"] {
+  padding-left: 2em;
+  padding-right: 2em;
 
-  .hljs {
-    background-color: #fafafa !important;
+  border-top: 2px solid @--color-mian;
+
+  div.protyle-action {
+    margin: 10px 10px;
   }
 
+  div.protyle-action::before {
+    content: url("./icons/macicon.svg");
+    width: 60px;
+    margin-right: 15px;
+  }
 
-  .protyle-action {
-    display: flex;
+  div.hljs {
+    margin-top: 20px;
+  }
 
-    .protyle-action__copy,
-    .protyle-action__menu {
-      color: #5f6368;
-    }
+  background-color: #FAFAFA !important;
 
-    .protyle-action__language {
-      position: relative;
-      // font-weight: 700;
-    }
+  span {
+    opacity: 1 !important;
 
-    .protyle-action__language::after {
-      content: '>>>';
-      position: absolute;
-      top: 0;
-      left: -41px;
-      font-weight: 700;
-      // font-size: 150%;
-
-    }
-
-    .protyle-icon {
+    &.protyle-icon {
       background-color: transparent !important;
+      color: #717479;
     }
-
   }
 
-  span.protyle-action--first.protyle-action__language {
-    display: flex;
-    flex-direction: column-reverse;
-  }
+  box-shadow: 0px 2px 7px 0px rgba(100, 100, 111, 0.2);
 }
 
-.b3-typography .code-block .protyle-action .protyle-icon,
-.b3-typography .code-block .protyle-action .protyle-action__language,
-.protyle-wysiwyg .code-block .protyle-action .protyle-icon,
-.protyle-wysiwyg .code-block .protyle-action .protyle-action__language {
-  opacity: 1;
-}
-
-.protyle-linenumber__rows {
-  padding-top: 2.6em;
-}
-
-.b3-typography .hljs,
-.protyle-wysiwyg .hljs {
-  padding-top: 2.6em;
-}
-
-.protyle-linenumber__rows>span::before {
-  text-align: center;
-}
 
 // 代码种类输入框和选项字体
 .b3-menu,
@@ -808,6 +776,7 @@ div.status {
   #barDock {
     margin-left: 3px;
   }
+
   #statusHelp {
     margin-right: 4px;
     margin-left: 6px;
